@@ -1,25 +1,32 @@
 \pagestyle{empty}
 
+\AtBeginDocument{\globalcolor{white}}
+
 \begin{document}
 
-\newlength{\mylength}
-\setlength{\mylength}{\textwidth-2.5mm}
+\pagecolor{black}
 
-\bannerpic
+\vspace*{-2cm}
 
-\vspace*{6mm}
+\begin{flushright}
+\profilepicture
+\end{flushright}
+
+\vspace*{-6.5cm}
+
+\metronomlogo
+
+\vspace*{1cm}
 
 \mysection{\jobtitle}
 
-\vspace*{-4mm}
+\vspace*{-1cm}
 
 \noindent\hspace*{-3.5mm}
 \begin{tabular}{l@{\hspace*{6mm}}l}
 \begin{minipage}[t][22.3cm][t]{6.1cm}
-\mysubsection{\aboutustitle}
-%\begin{flushleft}
+\mysubsection[metronomred]{\aboutustitle}
 \aboutuscontent
-%\end{flushleft}
 
 \vfill
 
@@ -27,17 +34,20 @@
 \joinuscontent
 \end{minipage} &
 \begin{minipage}[t][22.3cm][t]{12.35cm}
-\mysubsection{\environmenttitle}
+
+%\vspace*{5mm}
+
+\mysubsection[metronomblue]{\environmenttitle}
 \environmentcontent
 
 \vfill
 
-\mysubsection{\profiletitle}
+\mysubsection[metronomyellow]{\profiletitle}
 \profilecontent
 
 \vfill
 
-\mysubsection{\benefitstitle}
+\mysubsection[metronomgreen]{\benefitstitle}
 \benefitscontent
 \end{minipage}
 \end{tabular}
